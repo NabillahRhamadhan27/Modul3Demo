@@ -10,10 +10,11 @@ public class KasirSewaApartemen {
 
     /**
      * ini method kasir
+     *
      * @param namaPenyewa penyewanya
-     * @param lamaSewa lama sewa
+     * @param lamaSewa    lama sewa
      */
-    // Constructor yang menginisialisasi nama penyewa dan lama sewa
+// Constructor yang menginisialisasi nama penyewa dan lama sewa
     public KasirSewaApartemen(String namaPenyewa, int lamaSewa) {
         this.namaPenyewa = namaPenyewa;
         this.lamaSewa = lamaSewa;
@@ -21,9 +22,10 @@ public class KasirSewaApartemen {
 
     /**
      * ini method menghitung total harga
-     * @return
+     *
+     * @return double double
      */
-    // Metode untuk menghitung total harga berdasarkan lama sewa
+// Metode untuk menghitung total harga berdasarkan lama sewa
     public double hitungTotalHarga() {
         return lamaSewa * HARGA_HARIAN;
     }
@@ -31,8 +33,7 @@ public class KasirSewaApartemen {
     /**
      * ini method menampilkan detail penyewaan
      */
-
-    // Metode untuk menampilkan detail sewa
+// Metode untuk menampilkan detail sewa
     public void tampilkanDetail() {
         System.out.println("Nama Penyewa: " + namaPenyewa);
         System.out.println("Lama Sewa: " + lamaSewa + " hari");
@@ -41,9 +42,9 @@ public class KasirSewaApartemen {
 
     /**
      * ini method main untuk menjalankan suatu program
-     * @param args
+     *
+     * @param args the input arguments
      */
-
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Masukkan Nama Penyewa: ");
